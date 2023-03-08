@@ -1,0 +1,295 @@
+@font-face {
+    font-family: 'pilatextended-heavy';
+    src: url('FUENTES/PilatExtended-Heavy.woff') format('woff'), url('FUENTES/PilatExtended-Heavy.woff2') format('woff2'), url('FUENTES/PilatExtended-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'pilatextended-regular';
+    src: url('FUENTES/pilatextended-regular.woff') format('woff'), url('FUENTES/pilatextended-regular.woff2') format('woff2'), url('FUENTES/pilatextended-regular.ttf') format('truetype');
+}
+
+body {
+    font-family: pilatextended-regular, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+header {
+    padding-bottom: 40px;
+}
+
+header h1 {
+    margin-bottom: 40px;
+}
+
+header .menu {
+    display: block;
+    margin-top: -13px;
+}
+
+header .menu a img {
+    height: 75px;
+    width: auto;
+}
+
+header .menu a {
+    color: #000;
+    font-size: 16px;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    margin-left: -2px;
+    margin-right: -2px;
+}
+
+header .menu a .hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: none;
+}
+
+header .menu a:hover .hover {
+    display: inline-block;
+}
+
+header {
+    text-align: center;
+}
+
+header #logo img {
+    position: relative;
+    z-index: 100;
+    display: inline-block;
+    max-height: 100px;
+    max-width: 80%;
+}
+
+footer .rrss {
+    display: block;
+    margin-top: -13px;
+}
+
+footer .rrss a img {
+    height: 45px;
+    width: auto;
+}
+
+footer .rrss a {
+    color: #000;
+    font-size: 16px;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    margin-left: -2px;
+    margin-right: -2px;
+}
+
+footer .rrss a .hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: none;
+}
+
+footer .rrss a:hover .hover {
+    display: inline-block;
+}
+
+footer .redes p {
+    margin-top: 150px;
+}
+
+.trazo {
+    margin-bottom: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    min-height: 10vh;
+    display:flex;
+}
+
+footer > div {
+    flex: 1;
+    margin-left: 10%;
+}
+
+footer .soporte ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+footer .soporte ul a {
+    color: inherit;
+}
+
+footer .soporte ul li { margin-bottom: 10px; }
+
+footer .formulario a {
+    display: block;
+    text-align: center;
+    text-shadow: none;
+    margin-bottom: 10px;
+    font-size:10px;
+    letter-spacing:0;
+    font-weight: bold;
+}
+
+footer .formulario input {
+    display: block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-sizing: border-box;
+    width: 300px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #000;
+    font-family: termina, sans-serif; font-weight: 700; font-style: normal;
+    color: #000;
+    font-size: 16px;
+}
+
+footer .formulario input::-webkit-input-placeholder {
+    color: #000;
+}
+
+footer .formulario button {
+    display: block;
+    width: 300px;
+    border: none;
+    background: transparent;
+    color: #000;
+    font-family: termina, sans-serif; font-weight: 700; font-style: normal;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+section article a .hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    transition: .5s ease;
+    opacity: 0;
+}
+
+section article a:hover .hover {
+    margin: auto;
+    display: inline-block;
+    opacity: 1;
+}
+
+section article table tr td:last-child {
+    float: left;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+section article table tr td:last-child h1 {
+    font-family: pilatextended-regular, sans-serif;
+    font-size: 30px;
+    text-align: left;
+}
+
+section article table tr td:last-child h3 {
+    font-family: pilatextended-regular, sans-serif;
+    font-size: 24px;
+    text-align: left;
+    margin-top: -20px;
+}
+
+section article table tr td:last-child p {
+    font-weight: normal;
+    text-align: left;
+}
+
+section article table tr td:last-child select {
+    font-family: pilatextended-regular, sans-serif;
+    padding: 6px 12px;
+    border: 1px solid #525ab7;
+    border-radius: 4px;
+}
+
+section article table tr td:last-child button {
+    color: #ffffff;
+    background-color: #525ab7;
+    font-family: pilatextended-regular, sans-serif;
+    padding: 6px 12px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    touch-action: manipulation;
+    cursor: pointer;
+}
+
+section article .galeria .fila {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+section article .galeria .columna {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+section article .galeria h1 {
+    margin-bottom: 50px;
+}
+
+section article .galeria .columna:first-child {
+    margin-left: 120px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+section { width: 1000px; max-width: 100%; margin: auto; }
+section article { color: #525ab7; padding-bottom: 50px; }
+section article h1 { font-family: pilatextended-heavy, sans-serif; font-size: 18px; text-transform: uppercase;  margin-top: 10px; text-align: center; letter-spacing: 1px }
+section article h1:hover { color: #283c9d }
+section article a { color: #1c2579;  letter-spacing: 1px; position: relative; }
+section article a:hover { text-decoration: underline; }
+section article p { text-align: center; margin-top: -10px; line-height: 20px; font-weight: bold; }
+section article img { height: auto; width: 100%; }
+section article .intro { margin-left: -100px; height: auto; width: 120%; }
+section article figure a img { width: 92%; margin: auto; height: auto; display: block;}
+section article figure { margin: 0 auto; max-width: 500px; }
+
+@media (max-width: 800px) {
+    header {
+        padding-top: 50px;
+    }
+
+    section {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    section article .galeria .columna {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    section article .galeria .columna {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
