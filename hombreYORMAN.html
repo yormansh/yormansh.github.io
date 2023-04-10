@@ -26,6 +26,9 @@
             <img src="IMG/menu/galeria-hover.png" class="hover"/>
         </a>
     </div>
+
+    <br>
+    <input id="ropaABuscar" type="text" size="48" placeholder="Buscar por nombre de producto">
 </header>
 
 <section>
@@ -87,29 +90,51 @@
     <div class="redes">
         <div class="rrss">
             <a href="https://www.instagram.com/leomessi/" target="_blank">
-                <img src="IMG/redes/ig.png"/>
-                <img src="IMG/redes/ig-hover.png" class="hover"/>
+                <img src="../IMG/redes/ig.png"/>
+                <img src="../IMG/redes/ig-hover.png" class="hover"/>
             </a>
             <a href="https://www.facebook.com/leomessi" target="_blank">
-                <img src="IMG/redes/fb.png"/>
-                <img src="IMG/redes/fb-hover.png" class="hover"/>
+                <img src="../IMG/redes/fb.png"/>
+                <img src="../IMG/redes/fb-hover.png" class="hover"/>
             </a>
             <a href="https://twitter.com/ieomessiok" target="_blank">
-                <img src="IMG/redes/tw.png"/>
-                <img src="IMG/redes/tw-hover.png" class="hover"/>
+                <img src="../IMG/redes/tw.png"/>
+                <img src="../IMG/redes/tw-hover.png" class="hover"/>
             </a>
             <a href="https://www.youtube.com/user/leomessi" target="_blank">
-                <img src="IMG/redes/yt.png"/>
-                <img src="IMG/redes/yt-hover.png" class="hover"/>
+                <img src="../IMG/redes/yt.png"/>
+                <img src="../IMG/redes/yt-hover.png" class="hover"/>
             </a>
             <a href="https://www.tiktok.com/@leomessi__" target="_blank">
-                <img src="IMG/redes/tiktok.png"/>
-                <img src="IMG/redes/tiktok-hover.png" class="hover"/>
+                <img src="../IMG/redes/tiktok.png"/>
+                <img src="../IMG/redes/tiktok-hover.png" class="hover"/>
             </a>
         </div>
         <p>&copy; 2023 Yorman Santos Hernández</p>
     </div>
 </footer>
+
+<script type="text/javascript">
+    //Buscamos la barra de búsqueda para recoger lo que ha escrito el usuario
+    const inputBusqueda = document.getElementById("ropaABuscar");
+
+    //Añadimos el disparador para cuando escriban en el cuadro
+    inputBusqueda.addEventListener('input', () => {
+        //Recogemos lo que ha escrito el usuario y lo almacenamos en una variable.
+        const aBuscar = inputBusqueda.value.toLowerCase().trim();
+
+        //Guardamos todos los productos que se visualizan en la página.
+        const productos = document.querySelectorAll('figure');
+
+        //Para todos los productos
+        productos.forEach(producto => {
+            //Obtenemos el nombre de cada producto.
+            const nombre = producto.querySelector('h1').textContent.toLowerCase();
+            //Mostramos o ocultamos, en base a si el nombre incluye o no lo escrito en el cuadro.
+            producto.style.display = nombre.includes(aBuscar) ? 'block' : 'none';
+        });
+    });
+</script>
 
 </body>
 </html>

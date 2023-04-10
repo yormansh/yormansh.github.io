@@ -68,6 +68,26 @@ header #logo img {
     max-width: 80%;
 }
 
+header #ropaABuscar {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-sizing: border-box;
+    width: 300px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #000;
+    font-family: termina, sans-serif; font-weight: 700; font-style: normal;
+    color: #000;
+    font-size: 16px;
+}
+
+header #ropaABuscar::-webkit-input-placeholder {
+    color: #333335;
+}
+
 footer .rrss {
     display: block;
     margin-top: -13px;
